@@ -6,12 +6,12 @@
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 </head>
 <body>
 <form action="" class="register_user">
-	<fieldset>
 		<legend>Форма регистрации спортсмена</legend>
 		<div class="first_name">
 			<label for="first_name">Имя</label>
@@ -51,8 +51,11 @@
 			<label for="passport">Паспортные данные</label>
 			<input type="text" id="passport" placeholder="Укажите серию и номер паспорта">
 		</div>
-	</fieldset>
+		<div class="type_race">
+			<label for="type_race">Выберите вариант забега</label>
+			<p>Пробегу online<input name="type_race" type="radio" value="online" checked></p>
+			<p>Приеду на забег<input name="type_race" type="radio" value="in_place"></p>
+		</div>
 </form>
-<script src="script.js"></script>
 </body>
 </html>
