@@ -5,6 +5,7 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 </head>
@@ -14,15 +15,19 @@
 		<legend>Форма регистрации спортсмена</legend>
 		<div class="first_name">
 			<label for="first_name">Имя</label>
-			<input type="text" id="first_name">
+			<input type="text" id="first_name" placeholder="Введите имя">
 		</div>
 		<div class="last_name">
 			<label for="last_name">Фамилия</label>
-			<input type="text" id="last_name">
+			<input type="text" id="last_name" placeholder="Введите фамилию">
 		</div>
 		<div class="email">
 			<label for="email">E-mail</label>
-			<input type="text" id="email">
+			<input type="text" id="email" placeholder="Введите e-mail адрес">
+		</div>
+		<div class="age">
+			<label for="age">Возраст</label>
+			<input type="number" min="1" max="99" id="age" placeholder="Укажите возраст">
 		</div>
 		<div class="sex">
 			<label for="sex">Пол</label>
@@ -42,7 +47,12 @@
 				<option value="Kazan">Казань</option>
 			</select>
 		</div>
+		<div class="passport">
+			<label for="passport">Паспортные данные</label>
+			<input type="text" id="passport" placeholder="Укажите серию и номер паспорта">
+		</div>
 	</fieldset>
 </form>
+<script src="script.js"></script>
 </body>
 </html>
