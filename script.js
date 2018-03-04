@@ -1,12 +1,15 @@
 $(document).ready(function () {
 	$('.passport').hide();
+	$('.option-race').hide();
 	$('#city').change(function (  ) {
-		$sport_city = 'Moscow';
-		$user_city = $('#city').val();
-		if ($user_city == $sport_city ) {
+		$sportCity = 'Moscow';
+		$userCity = $('#city').val();
+		if ($userCity == $sportCity ) {
 			$('.passport').show();
 		}else {
 			$('.passport').hide();
+			$('.option-race').show();
+			$optionRace = $('input[name=customRadio]:checked').val;
 		}
 	})
 })
